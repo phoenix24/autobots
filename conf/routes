@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                                       Application.index
+GET	/invite					Application.invite
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
