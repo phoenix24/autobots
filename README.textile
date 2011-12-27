@@ -15,6 +15,23 @@ GithubBot is basically a webhook service.
 
 h2. HelpBot
 
+The HelpBot is an interactive help bot, still under construction :D.
+please come back soon!
+
+HelpBot is basically a webhook service.
+
+
+h2. PostBot
+
+The PostBot is like a post master, you can make HTTP POST / GET / PUT / DELETE using it
+and have the posted data relayed anywhere (xmpp/email), to anyone. :P
+
+Post-Bot is basically a webhook service.
+
+
+h2. Todo-Bots
+
+This is a simple app that allows create and manage your todo's for various projects; and hopefully across a bunch of devices aswell.
 
 
 
