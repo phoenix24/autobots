@@ -1,4 +1,11 @@
-h3. GitHubBot
+h3. AutoBots
+
+A family of interactive bots, based to chat/interact on xmpp protocol.
+I tried make each one of these of a simple, 'create-your-bot' type framework but that is still to be done.
+ 
+
+
+h2. GithubBot
 
 The GithubBot listens to the commits made to a particular github repository, 
 and spews the alerts to a given user on his xmpp (gtalk) account.
@@ -6,9 +13,13 @@ and spews the alerts to a given user on his xmpp (gtalk) account.
 GithubBot is basically a webhook service.
 
 
-h3. How to use it ?
+h2. HelpBot
 
 
+
+
+
+h3. How to use it these bots ?
 
 Every new user needs to subscribe to the service initially at, 
 
