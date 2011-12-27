@@ -1,0 +1,6 @@
+h3. Todo-Bots
+
+This is a simple app that allows create and manage your todo's for various projects; and hopefully across a bunch of devices aswell.
+
+bq. "http://todo-bot.3bandar.org(todo-bot on 3bandar)":http://todo-bot.3bandar.org
+

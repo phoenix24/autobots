@@ -1,0 +1,16 @@
+{% extends "basic.html" %}
+
+{% block head_title %}{{ APP_NAME }} subscribe{% endblock %}
+
+{% block body%}
+        <h3>thankyou for subscribing! :)</h3>
+        <p>we have sent you an email with activation link; and an invitation to the chat-bot!</p>
+        <p>please activate your account to start recieving notifications from post-bot!</p><br/>
+        <p>for <b>CHAT-BOT NOTIFICATIONS</b> use this webhook listeners : <br/>
+            <span class="webhook-url">http://post-bot.appspot.com/post/xmpp/{{ user_address }}<span>
+        </p>
+        <p>OR</p>
+	    <p> for <b>EMAIL NOTIFICATIONS</b> use this webhook listeners : <br/>
+            <span class="webhook-url">http://post-bot.appspot.com/post/email/{{ user_address }}<span> 
+        </p>
+{% endblock %}

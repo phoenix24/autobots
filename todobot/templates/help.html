@@ -1,0 +1,52 @@
+{% extends "basic.html" %}
+
+{% block head_title %}{{ APP_NAME }} help{% endblock %}
+
+{% block body%}
+	<h3>list of commands supported by the chat bot:</h3>
+	<ul>
+		<li>
+			<div>
+				<span class="task"> add a task</span>
+				<span class="task description">task: [ description of the task ]</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span class="task"> list all the tasks</span>
+				<span class="task description">list: all</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span class="task"> list X tasks ( X integer )</span>
+				<span class="task description">list: [ X ]</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span class="task"> list all the tasks, marked status - incomplete / complete / on-going</span>
+				<span class="task description">list: [ status ]</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span class="task"> list X the tasks ( X integer ), marked status - incomplete / complete / on-going</span>
+				<span class="task description">list: [ status ] [ X ]</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span class="task"> list all the tasks, on a particular date</span>
+				<span class="task description">list: [ date ( dd-mm-yyyy ) ]</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span class="task"> delete a tasks</span>
+				<span class="task description">delete: [ task number ]</span>
+			</div>
+		</li>
+	</ul>
+{% endblock %}
+

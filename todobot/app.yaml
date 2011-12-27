@@ -1,0 +1,25 @@
+application: todo-bot
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /static
+  static_dir: static
+  
+- url: /_ah/.+
+  script: src/todo_bot.py
+  
+- url: /sms
+  script: src/todo_bot.py
+  
+- url: /todos
+  script: src/todo_bot.py
+  
+- url: /.*
+  script: src/main.py
+  
+inbound_services:
+- xmpp_message
+- mail
+  

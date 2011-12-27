@@ -1,0 +1,16 @@
+{% extends "basic.html" %}
+
+{% block head_title %}{{ APP_NAME }} home{% endblock %}
+
+{% block body%}
+	{% if user %}
+		<p>hold on we are still cooking up your stuff!</p>
+	{% else %}
+		<p>dropin your gmail-id / google-apps-id to receive an invitation!</p>
+		<form action="/" method="post">
+                        <input type="text" name="email_address" value="email-address@gmail.com">
+			<input type="submit" value="subscribe">
+		</form>
+	{% endif %}
+{% endblock %}
+

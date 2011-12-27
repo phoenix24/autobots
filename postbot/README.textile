@@ -1,0 +1,29 @@
+h3. PostBot
+
+The PostBot is like a post master, you can make HTTP POST / GET / PUT / DELETE using it
+and have the posted data relayed anywhere (xmpp/email), to anyone. :P
+
+Post-Bot is basically a webhook service.
+
+
+h3. How to use it ?
+
+Every new user needs to subscribe to the service initially at, 
+
+bq. "http://post-bot.3bandar.org(post bot)":http://post-bot.3bandar.org
+
+upon which it sends 
+
+bq. a _confirmation email_
+    an _invitation_ to your xmpp chat (gtalk) account
+
+
+h3. Todos,
+
+# add support for HTTP GET.
+# add support for HTTP PUT.
+# add support for HTTP DELETE.
+# pass the userid; service type (email/xmpp) as part of the POST data or the GET data (absolutely debatable; need to think over.)
+# keep a count of the messages sent.
+# Post-Bot, data should be viewable on the web-page aswell; for introspection you see. 
+# Post-Bot, also generate a short-url for each posted-data; (and return it against each post) so that can be used as a bin; send over a commandline; app; service; etc. 

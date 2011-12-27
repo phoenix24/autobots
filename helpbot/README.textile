@@ -1,0 +1,5 @@
+h3. HelpBot
+
+The HelpBot is an interactive help bot, still under construction :D.
+please come back soon!
+

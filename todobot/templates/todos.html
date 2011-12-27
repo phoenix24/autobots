@@ -1,0 +1,46 @@
+{% extends "basic.html" %}
+
+{% block head_title %}{{ APP_NAME }} your todolist{% endblock %}
+
+{% block body%}
+	{% if user %}
+      <form action="/todos" method="post">
+        <div>
+        	<textarea name="task" rows="3" cols="60"></textarea> 
+			<select name="status" size="3" class="status">
+				<option value="incomplete" selected="selected">incomplete</option>
+				<option value="on-going">on-going</option>
+				<option value="complete">complete</option>
+			</select>
+			<input type="hidden" name="task-action" value="new">
+			<input type="submit" value="add task">
+		</div>
+      </form>
+	  
+	  <ul class="tasklist">
+	  	{% for todo in todos %}
+			<li>
+				<span class="task">{{ todo.task }}</span>
+				<span class="date">({{ todo.date }})</span> 
+				<form action="/todos" method="post">
+					<input type="hidden" name="task-key" value="{{ todo.key }}">
+					<input type="hidden" name="task-action" value="delete">
+					<input type="submit" value="delete task">
+				</form>
+				<form action="/todos" method="post">
+					<select name="status" class="status">
+						<option value="incomplete" {% ifequal todo.status "incomplete" %}selected="selected"{% endifequal %}>incomplete</option>
+						<option value="on-going" {% ifequal todo.status "on-going" %}selected="selected"{% endifequal %}>on-going</option>
+						<option value="complete" {% ifequal todo.status "complete" %}selected="selected"{% endifequal %}>complete</option>
+					</select>
+					<input type="hidden" name="task-key" value="{{ todo.key }}">
+					<input type="hidden" name="task-action" value="update">
+					<input type="submit" value="update status">
+				</form>
+			</li>
+		{% endfor %}
+	  </ul>
+	{% else %}
+		<p>you'll need to login to be able to add/edit/delete tasks.</p>
+	{% endif %}
+{% endblock %}

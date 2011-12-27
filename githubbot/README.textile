@@ -1,0 +1,22 @@
+h3. GitHubBot
+
+The GithubBot listens to the commits made to a particular github repository, 
+and spews the alerts to a given user on his xmpp (gtalk) account.
+
+GithubBot is basically a webhook service.
+
+
+h3. How to use it ?
+
+
+
+Every new user needs to subscribe to the service initially at, 
+
+bq. "http://github-bot.3bandar.org(github bot)":http://github-bot.3bandar.org
+
+upon which it sends 
+
+bq. a _confirmation email_
+    an _invitation to your xmpp chat (gtalk) account_
+
+
