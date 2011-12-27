@@ -1,4 +1,4 @@
-h3. AutoBots
+h1. AutoBots
 
 A family of interactive bots, based to chat/interact on xmpp protocol.
 I tried make each one of these of a simple, 'create-your-bot' type framework but that is still to be done.
@@ -36,6 +36,9 @@ This is a simple app that allows create and manage your todo's for various proje
 
 
 
+h2. FAQ
+
+
 h3. How to use it these bots ?
 
 Every new user needs to subscribe to the service initially at, 
@@ -47,4 +50,7 @@ upon which it sends
 bq. a _confirmation email_
     an _invitation to your xmpp chat (gtalk) account_
 
+h3. Are these WebHooks ?
+
+Yes most of these bots are webhooks.
 
